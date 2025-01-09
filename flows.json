@@ -1,0 +1,31 @@
+[
+    {
+        "id": "7a0bc223.f31ab4",
+        "type": "inject",
+        "z": "f7a65e3d.7c3a98",
+        "name": "Start Flow",
+        "props": [{"p": "payload"}],
+        "payload": "Hello, World!",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 150,
+        "y": 100,
+        "wires": [["2d8f7fa1.292f3a"]]
+    },
+    {
+        "id": "2d8f7fa1.292f3a",
+        "type": "debug",
+        "z": "f7a65e3d.7c3a98",
+        "name": "Output Hello World",
+        "active": true,
+        "console": "false",
+        "complete": "true",
+        "x": 350,
+        "y": 100,
+        "wires": []
+    }
+]
