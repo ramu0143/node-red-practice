@@ -1,31 +1,64 @@
 [
     {
+        "id": "074e55c37b0f477a",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "7a0bc223.f31ab4",
         "type": "inject",
-        "z": "f7a65e3d.7c3a98",
+        "z": "074e55c37b0f477a",
         "name": "Start Flow",
-        "props": [{"p": "payload"}],
-        "payload": "Hello, World!",
-        "payloadType": "str",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
+        "payload": "Hello, World!",
+        "payloadType": "str",
         "x": 150,
         "y": 100,
-        "wires": [["2d8f7fa1.292f3a"]]
+        "wires": [
+            [
+                "2d8f7fa1.292f3a",
+                "2a7a731f92a6ecf5"
+            ]
+        ]
     },
     {
         "id": "2d8f7fa1.292f3a",
         "type": "debug",
-        "z": "f7a65e3d.7c3a98",
+        "z": "074e55c37b0f477a",
         "name": "Output Hello World",
         "active": true,
         "console": "false",
         "complete": "true",
         "x": 350,
         "y": 100,
+        "wires": []
+    },
+    {
+        "id": "2a7a731f92a6ecf5",
+        "type": "debug",
+        "z": "074e55c37b0f477a",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 320,
+        "y": 200,
         "wires": []
     }
 ]
